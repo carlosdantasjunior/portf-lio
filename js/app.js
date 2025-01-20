@@ -1,12 +1,21 @@
 alert ('Digite a senha do sistema' );
-let senhaDoSistema = "senhaTeste";
+let senhaDoSistema = "casa";
 let senha; 
-while (senha != senhaDoSistema) {
+let Tentativas = 1;
+let TentativasMax = 3;
+
+while (Tentativas <= TentativasMax) {
     senha = prompt("Digite a senha do sistema:");
 
 if (senha == senhaDoSistema){
     alert("Acesso ao sistema garantido");
-}else{
-    alert("senha incorreta");
+    break;
+}else {
+    alert(`senha incorreta ${Tentativas} de ${TentativasMax}.`);
+    Tentativas++ ;
+
+
+    
 }
 }
+
