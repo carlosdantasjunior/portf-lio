@@ -1,6 +1,6 @@
 alert ('Digite a senha do sistema' );
 let senhaDoSistema = "senhaTeste";
-let senha 
+let senha; 
 while (senha != senhaDoSistema) {
     senha = prompt("Digite a senha do sistema:");
 
